@@ -384,6 +384,14 @@ home-content p{
             
         }
 
+/* Add after line 382 */
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
 
 .services{
 background: var(--bg-color);  
