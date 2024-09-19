@@ -130,6 +130,8 @@ span{
     line-height: 1;
 }
 .home-img{
+    height:80%;
+    width: auto;
     border-radius: 50%;
 }
 .home-img img{
