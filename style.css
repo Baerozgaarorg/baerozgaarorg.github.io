@@ -348,19 +348,40 @@ home-content p{
         margin: 2px 0 15px;
         }
 .timeline-content {
-        background-color: var(--bg-color);
-        border: 3px solid var(--main-color);
-        padding: 10px 10px;
-        border-radius: 4rem;
-        box-shadow: 0 0 10px var(--main-color);
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
+    background-color: rgba(8, 8, 8, 0.8); /* Slightly transparent background */
+    border: 2px solid var(--main-color);
+    padding: 20px;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(0, 255, 238, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
         }
     
     
     .timeline-content:hover{
-        transform: scale(1.05);
+        transform: translateY(-5px);
+        box-shadow: 0 0 30px rgba(0, 255, 238, 0.5);
+        }
+        
+    .timeline-dot {
+        box-shadow: 0 0 15px var(--main-color);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .timeline-item:hover .timeline-dot {
+        transform: scale(1.2);
         box-shadow: 0 0 25px var(--main-color);
+    }
+        .timeline-item {
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .timeline-item:hover {
+            opacity: 1;
+        }
+        .timeline-content:hover video {
+            box-shadow: 0 0 25px rgba(0, 255, 238, 0.4);
         }
         .timeline-content h3{
         font-size: 20px;
@@ -375,10 +396,15 @@ home-content p{
         line-height: 22px;
         }
         .timeline-content video {
-            display: block;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 1rem;
+            border: 2px solid var(--main-color);
+            box-shadow: 0 0 15px rgba(0, 255, 238, 0.2);
             margin: 20px auto;
-            border: 2px solid #000;
-            border-radius: 10px;
+            display: block;
+            transition: all 0.3s ease-in-out;
           }
           
 
