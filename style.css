@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;    
@@ -22,9 +23,15 @@ html{
     overflow-x:hidden;
 }
 body{
-    background: var(--bg-color);
+    background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(circle at center, transparent 0%, var(--bg-color) 70%),
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 3px),
+        linear-gradient(88deg, rgba(255, 255, 255, 0.05) 1px, transparent 3px);
+    background-size: 100% 100%, 20px 20px, 20px 20px;
+    background-position: center center;
+    background-attachment: fixed;
     color: var(--text-color);
-
 }
 
 .header{
@@ -408,7 +415,7 @@ color: white;
     gap: 2.5rem;
   }  
 .service-box{
-background-color: var(--main-color);
+background-color: var(--main-color);    
 height: 300px;
 border-radius: 3rem;
 border: 5px solid transparent;
@@ -694,5 +701,3 @@ left: 7px;
         grid-template-columns: repeat(1,1fr);
     }
 }
-
-
