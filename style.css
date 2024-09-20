@@ -16,6 +16,7 @@
     --second-bg-color: #3131313;
     --text-color: white;
     --main-color:#00ffee;
+
 }
 
 html{
@@ -162,7 +163,6 @@ home-content p{
     line-height: 1.8;
     max-width: 1000px;
 }
-
 .social a{
     display: inline-flex;
     justify-content: center;
@@ -180,6 +180,29 @@ home-content p{
 
 
 .social a:hover{
+   color: var(--text-color);
+   transform: scale(1.3)translateY(-5px); box-shadow: 0 0 25px var(--main-color);
+   box-shadow: 0 0 25px var(--main-color);
+   background-color: var(--main-color);
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+
+.social-icons a:hover{
    color: var(--text-color);
    transform: scale(1.3)translateY(-5px); box-shadow: 0 0 25px var(--main-color);
    box-shadow: 0 0 25px var(--main-color);
@@ -438,33 +461,42 @@ video {
 
 
 .services{
-background: var(--bg-color);  
-color: black;
+/* background: var(--bg-color);  
+color: black; */
+background-color: #080808;
+    background-image: 
+        radial-gradient(circle at center, transparent 0%, #080808 70%),
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 100% 100%, 20px 20px, 20px 20px;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
 }
 .services h2{ 
 margin-bottom: 5rem;
 color: white;
 }
 .service-container {
-    display: grid;
+    display: grid;    
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2.5rem;
+    gap: 10rem;
   }  
 .service-box{
-background-color: var(--main-color);    
-height: 300px;
-border-radius: 3rem;
-border: 5px solid transparent;
-cursor: pointer;
-transition: 0.4s ease-in-out;
-}
+    background-color: var(--main-color);    
+    height: 250px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    }
 
 .service-box:hover{
-background: white;
-color: black;
-border: 5px solid var(--main-color);
-transform: scale(1.03);
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
 }
 .service-box .service-info{
 display: flex;
